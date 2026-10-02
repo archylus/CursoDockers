@@ -1,0 +1,9 @@
+2026-09-30T02:44:01.185Z [INFO] Starting CLI in server mode (stdio)
+2026-09-30T02:44:01.187Z [INFO] Starting CLI in stdio mode (Rust JSON-RPC engine)
+2026-09-30T02:44:01.190Z [INFO] Shell completions: no writable completion directory found for bash, skipping
+2026-09-30T02:44:01.195Z [INFO] CLI server ready (stdio mode, Rust JSON-RPC engine)
+2026-09-30T02:44:01.195Z [INFO] Server started, waiting for requests
+2026-09-30T07:04:33.726Z [INFO] Starting graceful shutdown of CLI server
+2026-09-30T07:04:33.726Z [INFO] Destroying 0 active sessions
+2026-09-30T07:04:33.896Z [INFO] Rust JSON-RPC engine stopped successfully
+2026-09-30T07:04:33.896Z [INFO] CLI server stopped successfully

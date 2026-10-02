@@ -1,0 +1,33 @@
+services:
+  app:
+    container_name: app
+    image: cachac/todo-demo:1.0
+    restart: unless-stopped
+    mem_limit: 50m
+    cpus: 0.3
+    ports:
+      - "8080:3000"
+
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 12345
+      MYSQL_DB: todos
+
+    depends_on:
+      - mysql
+
+
+  mysql:
+    container_name: db-LuisMolina
+    image: mysql:5.7
+
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: todos
+
+    volumes:
+      - todo-mysql-data:/var/lib/mysql
+
+volumes:
+  todo-mysql-data:
